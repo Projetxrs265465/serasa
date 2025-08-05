@@ -4,9 +4,9 @@ import { GeistMono } from 'geist/font/mono'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
-  generator: 'v0.dev',
+  title: 'Consulta',
+  description: 'Feirão',
+  generator: 'mrrbt',
 }
 
 export default function RootLayout({
@@ -25,6 +25,24 @@ html {
 }
         `}</style>
       </head>
+      <!-- Event snippet for 12 conversion page -->
+<script>
+  gtag('event', 'conversion', {
+      'send_to': 'AW-17266114156/-dxECPHl0f8aEOz8j6lA',
+      'value': 1.0,
+      'currency': 'BRL',
+      'transaction_id': ''
+  });
+</script>
+        <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17266114156"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-17266114156');
+</script>
       <body>{children}</body>
     </html>
   )
