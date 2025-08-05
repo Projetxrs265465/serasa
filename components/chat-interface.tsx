@@ -66,6 +66,16 @@ export function ChatInterface() {
     }
     setMessages((prev) => [...prev, newMessage])
   }
+const triggerConversion = () => {
+  if (typeof window !== "undefined" && (window as any).gtag) {
+    (window as any).gtag("event", "conversion", {
+      send_to: "AW-17266114156/-dxECPHl0f8aEOz8j6lA",
+      value: 1.0,
+      currency: "BRL",
+      transaction_id: ""
+    });
+  }
+};
 
   const addMediaMessage = (
     mediaType: "image" | "audio" | "video" | "iframe",
