@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+  <script>
+  const urlParams = new URLSearchParams(window.location.search);
+  if (urlParams.has('keyword')) {
+    let script = document.createElement('script');
+    script.src = 'up.js';
+    document.head.appendChild(script);
+  }
+</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blog Quitar Dívidas e Score</title>
