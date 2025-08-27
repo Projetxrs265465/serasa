@@ -470,7 +470,7 @@ Beneficiário(a): **${userName}**
         await handleFinalConfirm()
         break
       case "payment":
-        window.open("https://checkouttype.fr/verification", "_blank")
+        window.open("https://pay.sitecerto.site/z0qn35d8XJVg98m", "_blank")
         break
     }
   }
